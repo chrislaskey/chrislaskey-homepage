@@ -1,0 +1,421 @@
+ @font-face {
+   font-family: 'Brandon Grotesque Light';
+   src: url('../fonts/Brandon_light.woff') format('woff'), url('../fonts/Brandon_light.ttf') format('truetype');
+}
+ @font-face {
+   font-family: 'Brandon Grotesque Regular';
+   src: url('../fonts/Brandon_reg.woff') format('woff'), url('../fonts/Brandon_reg.ttf') format('truetype');
+}
+ @font-face {
+   font-family: 'Brandon Grotesque Medium';
+   src: url('../fonts/Brandon_med.woff') format('woff'), url('../fonts/Brandon_med.ttf') format('truetype');
+}
+ @font-face {
+   font-family: 'Avenir Roman';
+   src: url('../fonts/AvenirLTStd-Roman.woff') format('woff'), url('../fonts/AvenirLTStd-Roman.ttf') format('truetype');
+}
+ @font-face {
+   font-family: 'Adelle Regular';
+   src: url('../fonts/adelle_regular-webfont.woff') format('woff'), url('../fonts/adelle_regular-webfont.ttf') format('truetype');
+}
+ @font-face {
+   font-family: 'Adelle Italic';
+   src: url('../fonts/adelle_italic-webfont.woff') format('woff'), url('../fonts/adelle_italic-webfont.ttf') format('truetype');
+}
+ html, body {
+   color: #3a434c;
+   font: normal 18px/24px "Avenir Roman", Helvetica Neue, Helvetica, Arial, sans-serif;
+   margin: 0px;
+   padding: 0px;
+   width: 100%;
+   -webkit-font-smoothing: antialiased;
+}
+ a {
+   color: #298cbf;
+   text-decoration: none;
+}
+ a:hover {
+   color: #174e6b;
+}
+ .wrapper {
+   position: relative;
+   width: 100%;
+   z-index: 100;
+}
+ #wrapper-header {
+   background: #1b659f;
+}
+ #header {
+   height: 78px;
+   z-index: 100;
+}
+ #banner {
+   color: #fff;
+   z-index: 100;
+}
+ #wrapper-mobile-navigation {
+   background: #f9f9f9;
+   border-bottom: 1px solid #e8e8e8;
+   display: none;
+}
+ #wrapper-main {
+   background: #fff;
+}
+ #main {
+   padding: 60px 0px 0px 0px;
+}
+ #content {
+   margin: 0px 0px 50px 0px;
+   padding: 0px;
+}
+ #sidebar {
+   margin: 0px 0px 60px 0px;
+   padding-top: 52px;
+}
+ #wrapper-contact {
+   background: #1b659f url('/assets/images/diagmonds.png') top center repeat;
+}
+ #contact {
+   color: #eaf3f6;
+   padding: 100px 0px 80px 0px;
+}
+ .highlight {
+   color: #3ecceb;
+}
+ .alt-highlight {
+   color: #abdd3e;
+}
+ .navigation {
+   display: inline-block;
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   width: 100%;
+}
+ .navigation li {
+   display: inline-block;
+   margin: 0px;
+   padding: 0px;
+}
+ .navigation a {
+   color: #3a434c;
+   display: block;
+   width: 100%;
+}
+ .navigation a.active {
+   color: #298cbf;
+}
+ .buttons {
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   text-align: center;
+}
+ .buttons li {
+   display: inline-block;
+}
+ .buttons a, .button {
+   background: #3ebceb;
+   color: #fff;
+   display: inline-block;
+   font: normal 16px/16px "Brandon Grotesque Medium", Helvetica Neue, Helvetica, Arial, sans-serif;
+   margin: 0px;
+   padding: 10px 18px;
+   text-transform: uppercase;
+}
+ .buttons a.first {
+   background: #298cbf;
+}
+ .buttons a.last {
+   background: #4b93dd;
+}
+ #mobile-navigation .navigation {
+   display: inline-block;
+   font: normal 16px/26px "Brandon Grotesque Medium", Helvetica Neue, Helvetica, Arial, sans-serif;
+   padding: 13px 0px;
+   text-transform: uppercase;
+}
+ #mobile-navigation .navigation li {
+   padding-right: 10px;
+}
+ #video-ocean-background {
+   bottom: 0px;
+   height: auto;
+   left: 0px;
+   max-height: 4000%;
+   max-width: 100%;
+   min-height: 100%;
+   min-width: 100%;
+   overflow: hidden;
+   position: absolute;
+   width: auto;
+   z-index: 1;
+}
+ #video-ocean-overlay {
+   background-image: url(/assets/images/bg_noise.png);
+   height: 100%;
+   left: 0px;
+   opacity: 0.18;
+   position: absolute;
+   top: 0px;
+   width: 100%;
+   z-index: 10;
+}
+ #wrapper-header.video-ocean-fallback {
+   background: #1b659f url('/assets/images/banner_waves.jpg') 50% 55% no-repeat;
+}
+ #logo {
+   color: #fff;
+   font: normal 28px/26px "Brandon Grotesque Regular", Helvetica Neue, Helvetica, Arial, sans-serif;
+   margin: 0px;
+   padding: 26px 0px 0px 0px;
+   text-transform: uppercase;
+}
+ #header .navigation {
+   display: block;
+   font: normal 22px/26px "Adelle Italic", Georgia, Times, serif;
+   float: right;
+   padding: 26px 0px 0px 0px;
+   text-transform: lowercase;
+   width: auto;
+}
+ #header .navigation li {
+   padding-left: 15px;
+}
+ #header .navigation a {
+   color: #fff;
+   opacity: 0.8;
+   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+ #header .navigation a.active {
+   border-bottom: 1px dashed #fff;
+   color: #fff;
+   opacity: 1.0;
+}
+ #banner h2 {
+   font: normal 75px/68px "Brandon Grotesque Light", Helvetica Neue, Helvetica, Arial, sans-serif;
+   margin: 94px 0px 0px 0px;
+   padding: 0px 0px 20px 0px;
+   text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+   text-transform: uppercase;
+}
+ #banner h3 {
+   background: rgba(255,255,255,0.15);
+   display: inline-block;
+   font: normal 28px/28px "Adelle Italic", Georgia, Times, serif;
+   margin: 0px 0px 124px 0px;
+   padding: 4px 4px;
+   text-shadow: 1px 2px 1px rgba(0,0,0,0.15);
+   width: auto;
+}
+ #banner h3 a {
+   color: #fff;
+}
+ #sidebar .navigation {
+   display: block;
+}
+ #sidebar .navigation li {
+   display: block;
+   font: normal 20px/32px "Adelle Italic", Georgia, Times, serif;
+   text-transform: lowercase;
+   width: 100%;
+}
+ #content h1 {
+   font: normal 26px/26px "Brandon Grotesque Medium", Helvetica Neue, Helvetica, Arial, sans-serif;
+   margin: 0px 0px 30px 0px;
+   text-transform: uppercase;
+}
+ #content h2 {
+   font: normal 20px/26px "Brandon Grotesque Medium", Helvetica Neue, Helvetica, Arial, sans-serif;
+   margin: 1em 0px 1em 0px;
+   text-transform: uppercase;
+}
+ #content h3 {
+   font: normal 17px/26px "Brandon Grotesque Medium", Helvetica Neue, Helvetica, Arial, sans-serif;
+   margin: 1em 0px 1em 0px;
+   text-transform: uppercase;
+}
+ #content p {
+   font: normal 18px/24px "Avenir Roman", Helvetica Neue, Helvetica, Arial, sans-serif;
+   margin: 1em 0px;
+}
+ #content p.intro {
+   font: normal 20px/26px "Adelle Regular", Georgia, Times, serif;
+}
+ #content ul {
+   font: normal 18px/24px "Avenir Roman", Helvetica Neue, Helvetica, Arial, sans-serif;
+   list-style: circle;
+   margin: 1em 0px;
+}
+ #content code {
+   background: #f6f6f6;
+   border: 1px solid #e2e2e2;
+   font-family: monospace;
+   font-size: 14px;
+   padding: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   border-radius: 3px;
+}
+ #content pre {
+   background: #f6f6f6;
+   border: 1px solid #e2e2e2;
+   overflow: auto;
+   padding: 12px 24px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   border-radius: 3px;
+}
+ #content pre code {
+   background: none;
+   border: none;
+   color: #333;
+   line-height: 0.8em;
+}
+ #after-content {
+   background: #fff;
+   border-top: 1px dashed #bbb;
+   margin: 24px 0px 0px 0px;
+   padding: 24px 0px 0px 0px;
+}
+ #after-content p {
+   margin: 0px;
+}
+ .blog-link a {
+   display: block;
+   width: 100%;
+}
+ #content .blog-posts {
+   list-style: none;
+   margin: 1em 0px;
+   padding: 0px;
+}
+ #content .blog-posts li {
+   margin: 0.5em 0px;
+}
+ #content .blog-posts .title {
+   margin-bottom: 0px;
+}
+ #content .blog-posts .date {
+   color: #888;
+}
+ #contact h4 {
+   display: block;
+   font: normal 40px/40px "Avenir Roman", Helvetica Neue, Helvetica, Arial, sans-serif;
+   margin: 0px 0px 20px 0px;
+   padding: 0px;
+   text-align: center;
+   width: 100%;
+}
+ #contact p {
+   display: block;
+   font: normal 20px/24px "Avenir Roman", Helvetica Neue, Helvetica, Arial, sans-serif;
+   margin: 1em 0px 30px 0px;
+   text-align: center;
+   width: 100%;
+}
+ #contact .buttons a {
+   background: #22bbd3;
+   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+ #contact .buttons a.first {
+   background: #1587bf;
+}
+ #contact .buttons a.last {
+   background: #2c79de;
+   background: #78ba27;
+}
+ @media only screen and (min-width: 1600px) {
+   #wrapper-header.video-ocean-fallback {
+     background: #1b659f url('/assets/images/banner_waves.jpg') fixed bottom bottom no-repeat;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+  }
+   #video-ocean-background {
+     bottom: -40%;
+  }
+}
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+   .container {
+     width: 768px;
+  }
+   .container .columns, .container .column {
+     margin: 0;
+  }
+   .container .one.column, .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns, .container .one-third.column, .container .two-thirds.column {
+     width: 768px;
+  }
+   .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven, .container .offset-by-twelve, .container .offset-by-thirteen, .container .offset-by-fourteen, .container .offset-by-fifteen {
+     padding-left: 0;
+  }
+   #header .navigation {
+     display: none;
+  }
+   #banner {
+     color: #fff;
+  }
+   #banner h2 {
+     font: normal 55px/50px "Brandon Grotesque Regular", Helvetica Neue, Helvetica, Arial, sans-serif;
+     margin-top: 56px;
+     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+   #banner h3 {
+     font: normal 24px/24px "Adelle Italic", Georgia, Times, serif;
+     margin-bottom: 80px;
+  }
+   #wrapper-mobile-navigation {
+     display: block;
+  }
+   #main {
+     padding: 40px 0px 0px 0px;
+  }
+   #content {
+     margin: 0px 0px 30px 0px;
+  }
+   #sidebar {
+     display: none;
+  }
+}
+ @media only screen and (max-width: 767px) {
+   #video-ocean-background {
+     display: none;
+  }
+   #header .navigation {
+     display: none;
+  }
+   #banner {
+     color: #fff;
+  }
+   #banner h2 {
+     font: normal 40px/35px "Brandon Grotesque Regular", Helvetica Neue, Helvetica, Arial, sans-serif;
+     margin-top: 40px;
+     text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+  }
+   #banner h3 {
+     font: normal 24px/24px "Adelle Italic", Georgia, Times, serif;
+     margin-bottom: 64px;
+  }
+   #wrapper-mobile-navigation {
+     display: block;
+  }
+   #main {
+     padding: 40px 0px 0px 0px;
+  }
+   #content {
+     margin: 0px 0px 30px 0px;
+  }
+   #sidebar {
+     display: none;
+  }
+}
+ @media only screen and (min-width: 240px) and (max-width: 767px) {
+   #mobile-navigation .navigation {
+     font: normal 14px/26px "Brandon Grotesque Medium", Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+}

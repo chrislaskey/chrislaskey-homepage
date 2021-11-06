@@ -1,100 +1,109 @@
 ---
 ---
+<html>
 
-<div class="wrapper" id="wrapper-header">
-  <div class="container" id="header">
-    <div class="sixteen columns alpha omega">
-      <a href="/" class="alpha six columns" id="logo">Chris Laskey</a>
-      <div class="omega ten columns" id="header-navigation">
+{% include head.html %}
+
+<body>
+  <div class="wrapper" id="wrapper-header">
+    <div class="container" id="header">
+      <div class="sixteen columns alpha omega">
+        <a href="/" class="alpha six columns" id="logo">Chris Laskey</a>
+        <div class="omega ten columns" id="header-navigation">
+          {% include navigation.html %}
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="banner">
+      <div class="sixteen columns alpha omega">
+        <h2>Software Engineer</h2>
+        <h3>
+          <a href="/technical-skills">
+            combining <span class="highlight">craftsmanship</span> with <span class="alt-highlight">pragmatism</span>
+          </a>
+        </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper" id="wrapper-mobile-navigation">
+    <div class="container" id="mobile-navigation">
+      <div class="sixteen columns alpha omega">
         {% include navigation.html %}
       </div>
     </div>
   </div>
 
-  <div class="container" id="banner">
-    <div class="sixteen columns alpha omega">
-      <h2>Software Architect</h2>
-      <h3>
-        <a href="/technical-skills">
-          combining <span class="highlight">craftsmanship</span> with <span class="alt-highlight">pragmatism</span>
-        </a>
-      </h3>
-    </div>
-  </div>
-</div>
-
-<div class="wrapper" id="wrapper-mobile-navigation">
-  <div class="container" id="mobile-navigation">
-    <div class="sixteen columns alpha omega">
-      {% include navigation.html %}
-    </div>
-  </div>
-</div>
-
-<div class="wrapper" id="wrapper-main">
-  <div class="container" id="main">
-    <div class="eleven columns alpha" id="content">
-       {{ content }}
-    </div>
-    <div class="offset-by-one four columns omega" id="sidebar">
-      <div id="sidebar-navigation">
-        {% include navigation.html %}
+  <div class="wrapper" id="wrapper-main">
+    <div class="container" id="main">
+      <div class="eleven columns alpha" id="content">
+        {{ content }}
+      </div>
+      <div class="offset-by-one four columns omega" id="sidebar">
+        <div id="sidebar-navigation">
+          {% include navigation.html %}
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="wrapper" id="wrapper-contact">
-  <div class="container" id="contact">
-    <div class="sixteen columns alpha omega">
-      <h4>Get in Touch</h4>
-      <p>If you're in the Boston area I'm always happy to meet in person.<br/>Further away? Send me a message!</p>
-      <ul class="buttons">
-        <li>
-          <a class="button first" href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#099;&#104;&#114;&#105;&#115;&#108;&#097;&#115;&#107;&#101;&#121;&#046;&#099;&#111;&#109;">Email</a>
-        </li>
-        <li>
-          <a class="button" href="http://twitter.com/chrislaskey">Twitter</a>
-        </li>
-        <li>
-          <a class="button last" href="http://github.com/chrislaskey">Github</a>
-        </li>
-      </ul>
+  <div class="wrapper" id="wrapper-contact">
+    <div class="container" id="contact">
+      <div class="sixteen columns alpha omega">
+        <h4>Get in Touch</h4>
+        <p>If you're in the Boston area I'm always happy to meet in person.<br/>Further away? Send me a message!</p>
+        <ul class="buttons">
+          <li>
+            <a class="button first" href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#099;&#104;&#114;&#105;&#115;&#108;&#097;&#115;&#107;&#101;&#121;&#046;&#099;&#111;&#109;">Email</a>
+          </li>
+          <li>
+            <a class="button" href="http://twitter.com/chrislaskey">Twitter</a>
+          </li>
+          <li>
+            <a class="button last" href="http://github.com/chrislaskey">Github</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-3303547-3']);
-  _gaq.push(['_trackPageview']);
+  <script src="/assets/js/jquery-3.6.0.slim.min.js"></script>
+  <script src="/assets/js/marked.min.js"></script>
 
-  (function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3303547-3']);
+    _gaq.push(['_trackPageview']);
 
-<script type="text/javascript">
-  $(function(){
-    var windowWidth = $(window).width(),
-      windowVideoMinimumSize = 960,
-      videoTarget = $('#wrapper-header'),
-      videoFallbackClass = 'video-ocean-fallback',
-      videoOverlay = '<div id="video-ocean-overlay"></div>';
-      video = ['<video id="video-ocean-background" preload="auto" autoplay="true" loop="loop" muted volume="0">',
-          '<source src="/static/video/ocean-waves.webm" type="video/webm"/>',
-          '<source src="/static/video/ocean-waves.ogv" type="video/ogg"/>',
-          '<source src="/static/video/ocean-waves.mp4" type="video/mp4"/>',
-          '<div id="video_fallback"></div>',
-          '</video>'].join('\n');
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 
-    if( windowWidth >= windowVideoMinimumSize ){
-      videoTarget.prepend(videoOverlay);
-      videoTarget.prepend(video);
-    }else{
-      videoTarget.addClass(videoFallbackClass);
-    }
-  });
-</script>
+  <script type="text/javascript">
+    $(function(){
+      var windowWidth = $(window).width(),
+        windowVideoMinimumSize = 960,
+        videoTarget = $('#wrapper-header'),
+        videoFallbackClass = 'video-ocean-fallback',
+        videoOverlay = '<div id="video-ocean-overlay"></div>';
+        video = ['<video id="video-ocean-background" preload="auto" autoplay="true" loop="loop" muted volume="0">',
+            '<source src="/assets/video/ocean-waves.webm" type="video/webm"/>',
+            '<source src="/assets/video/ocean-waves.ogv" type="video/ogg"/>',
+            '<source src="/assets/video/ocean-waves.mp4" type="video/mp4"/>',
+            '<div id="video_fallback"></div>',
+            '</video>'].join('\n');
+
+      if( windowWidth >= windowVideoMinimumSize ){
+        videoTarget.prepend(videoOverlay);
+        videoTarget.prepend(video);
+      }else{
+        videoTarget.addClass(videoFallbackClass);
+      }
+    });
+  </script>
+</body>
+</html>
