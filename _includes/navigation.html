@@ -1,6 +1,6 @@
 <ul class="navigation">
-  <li><a href="/">About</a></li>
-  <li><a href="/technical-skills">Technical Skills</a></li>
-  <li><a href="/work">Work</a></li>
-  <li><a href="/blog">Blog</a></li>
+  <li><a href="/" {% if page.url == "/" %} class="active" {% endif %}>About</a></li>
+  <li><a href="/technical-skills" {% if page.url == "/technical-skills" %} class="active" {% endif %}>Technical Skills</a></li>
+  <li><a href="/work" {% if page.url == "/work" %} class="active" {% endif %}>Work</a></li>
+  <li><a href="/blog" {% if page.url == "/blog" %} class="active" {% endif %}>Blog</a></li>
 </ul>
