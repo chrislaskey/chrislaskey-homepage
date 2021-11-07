@@ -252,12 +252,14 @@
    border: 1px solid #e2e2e2;
    font-family: monospace;
    font-size: 14px;
-   padding: 3px;
    -webkit-border-radius: 3px;
    -moz-border-radius: 3px;
    -ms-border-radius: 3px;
    -o-border-radius: 3px;
    border-radius: 3px;
+}
+ #content p code {
+   padding: 3px;
 }
  #content pre {
    background: #f6f6f6;
@@ -274,7 +276,7 @@
    background: none;
    border: none;
    color: #333;
-   line-height: 0.8em;
+   line-height: 1.5em;
 }
  #after-content {
    background: #fff;
