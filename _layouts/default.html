@@ -105,5 +105,23 @@
       }
     });
   </script>
+
+  <script>
+    $(document).ready(function() {
+      $(".show-more").off("click").on("click", function(event) {
+        event.preventDefault();
+
+        $(".show-more-content").show();
+        $(".show-more").hide();
+      });
+
+      $(".hide-more").off("click").on("click", function(event) {
+        event.preventDefault();
+
+        $(".show-more-content").hide();
+        $(".show-more").show();
+      })
+    })
+  </script>
 </body>
 </html>

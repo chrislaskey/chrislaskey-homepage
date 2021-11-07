@@ -305,6 +305,29 @@
  #content .blog-posts .date {
    color: #888;
 }
+ #content .hide-more,
+ #content .show-more {
+  background: #f6f6f6;
+  border: 1px solid #e2e2e2;
+  display: block;
+  font-size: 16px;
+  overflow: auto;
+  padding: 12px 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  color: #666;
+}
+ #content .hide-more:hover,
+ #content .show-more:hover {
+  color: #333;
+}
+ #content .show-more-content {
+  display: none;
+}
  #contact h4 {
    display: block;
    font: normal 40px/40px "Avenir Roman", Helvetica Neue, Helvetica, Arial, sans-serif;
