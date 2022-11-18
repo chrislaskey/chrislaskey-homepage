@@ -15,12 +15,8 @@
    src: url('../fonts/AvenirLTStd-Roman.woff') format('woff'), url('../fonts/AvenirLTStd-Roman.ttf') format('truetype');
 }
  @font-face {
-   font-family: 'Adelle Regular';
-   src: url('../fonts/adelle_regular-webfont.woff') format('woff'), url('../fonts/adelle_regular-webfont.ttf') format('truetype');
-}
- @font-face {
-   font-family: 'Adelle Italic';
-   src: url('../fonts/adelle_italic-webfont.woff') format('woff'), url('../fonts/adelle_italic-webfont.ttf') format('truetype');
+   font-family: 'RobotoSlab Regular';
+   src: url('../fonts/RobotoSlab-Regular.woff') format('woff'), url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
 }
  html, body {
    color: #3a434c;
@@ -173,7 +169,7 @@
 }
  #header .navigation {
    display: block;
-   font: normal 22px/26px "Adelle Italic", Georgia, Times, serif;
+   font: normal 22px/26px "RobotoSlab Regular", Georgia, Times, serif;
    float: right;
    padding: 26px 0px 0px 0px;
    text-transform: lowercase;
@@ -202,7 +198,7 @@
  #banner h3 {
    background: rgba(255,255,255,0.15);
    display: inline-block;
-   font: normal 28px/28px "Adelle Italic", Georgia, Times, serif;
+   font: normal 28px/28px "RobotoSlab Regular", Georgia, Times, serif;
    margin: 0px 0px 124px 0px;
    padding: 4px 4px;
    text-shadow: 1px 2px 1px rgba(0,0,0,0.15);
@@ -216,7 +212,7 @@
 }
  #sidebar .navigation li {
    display: block;
-   font: normal 20px/32px "Adelle Italic", Georgia, Times, serif;
+   font: normal 20px/32px "RobotoSlab Regular", Georgia, Times, serif;
    text-transform: lowercase;
    width: 100%;
 }
@@ -240,7 +236,7 @@
    margin: 1em 0px;
 }
  #content p.intro {
-   font: normal 20px/26px "Adelle Regular", Georgia, Times, serif;
+   font: normal 20px/26px "RobotoSlab Regular", Georgia, Times, serif;
 }
  #content ul {
    font: normal 18px/24px "Avenir Roman", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -391,7 +387,7 @@
      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   }
    #banner h3 {
-     font: normal 24px/24px "Adelle Italic", Georgia, Times, serif;
+     font: normal 24px/24px "RobotoSlab Regular", Georgia, Times, serif;
      margin-bottom: 80px;
   }
    #wrapper-mobile-navigation {
@@ -423,7 +419,7 @@
      text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
   }
    #banner h3 {
-     font: normal 24px/24px "Adelle Italic", Georgia, Times, serif;
+     font: normal 24px/24px "RobotoSlab Regular", Georgia, Times, serif;
      margin-bottom: 64px;
   }
    #wrapper-mobile-navigation {
